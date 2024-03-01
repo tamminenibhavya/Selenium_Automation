@@ -40,6 +40,7 @@ public class CheckoutPageStepDefn {
 		checkoutPage.Checkout();
 		Thread.sleep(3000);
 		String Actualprodname = checkoutPage.Getprodname();
+		System.out.println(Actualprodname);
 		Assert.assertEquals(Actualprodname.split("-")[0].trim(), Shortname);
 		
 		
